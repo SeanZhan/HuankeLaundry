@@ -1,0 +1,15 @@
+//
+//  Read.h
+//  HuanKeLaundry
+//
+//  Created by zhan on 15/11/25.
+//  Copyright © 2015年 湛礼翔. All rights reserved.
+//
+
+#ifndef Read_h
+#define Read_h
+#endif
+
+//
+// 这是一个用于洗衣服务的 O2O App
+// 使用OBJECTIVE-C语言编写

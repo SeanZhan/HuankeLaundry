@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7FB4D3081C05480100B4AE04 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB4D3071C05480100B4AE04 /* main.m */; };
+		7FB4D30B1C05480100B4AE04 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB4D30A1C05480100B4AE04 /* AppDelegate.m */; };
+		7FB4D3211C05480100B4AE04 /* HuanKeLaundryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB4D3201C05480100B4AE04 /* HuanKeLaundryTests.m */; };
+		7FB4D32C1C05480100B4AE04 /* HuanKeLaundryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB4D32B1C05480100B4AE04 /* HuanKeLaundryUITests.m */; };
+		7FB4D3441C054EB600B4AE04 /* GuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB4D3431C054EB600B4AE04 /* GuideViewController.m */; };
+		7FB4D3461C054EDB00B4AE04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FB4D3451C054EDB00B4AE04 /* Assets.xcassets */; };
+		7FB4D3491C054EEC00B4AE04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FB4D3471C054EEC00B4AE04 /* LaunchScreen.storyboard */; };
+		7FB4D34A1C054EEC00B4AE04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FB4D3481C054EEC00B4AE04 /* Main.storyboard */; };
+		7FB4D34D1C054FC800B4AE04 /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB4D34C1C054FC800B4AE04 /* UIColor+Extension.m */; };
+		7FB4D3501C05575F00B4AE04 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB4D34F1C05575F00B4AE04 /* LoginViewController.m */; };
+		7FB4D3541C0561F300B4AE04 /* 汉真广标艺术字体.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7FB4D3531C0561F300B4AE04 /* 汉真广标艺术字体.ttf */; };
+		7FB4D3561C05620900B4AE04 /* msyh.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7FB4D3551C05620900B4AE04 /* msyh.ttf */; };
+		7FB4D3581C05621300B4AE04 /* STHeiti-Light.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 7FB4D3571C05621300B4AE04 /* STHeiti-Light.ttc */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7FB4D31D1C05480100B4AE04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7FB4D2FB1C05480100B4AE04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7FB4D3021C05480100B4AE04;
+			remoteInfo = HuanKeLaundry;
+		};
+		7FB4D3281C05480100B4AE04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7FB4D2FB1C05480100B4AE04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7FB4D3021C05480100B4AE04;
+			remoteInfo = HuanKeLaundry;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7FB4D3031C05480100B4AE04 /* HuanKeLaundry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HuanKeLaundry.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FB4D3071C05480100B4AE04 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7FB4D3091C05480100B4AE04 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7FB4D30A1C05480100B4AE04 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7FB4D3171C05480100B4AE04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FB4D31C1C05480100B4AE04 /* HuanKeLaundryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HuanKeLaundryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FB4D3201C05480100B4AE04 /* HuanKeLaundryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HuanKeLaundryTests.m; sourceTree = "<group>"; };
+		7FB4D3221C05480100B4AE04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FB4D3271C05480100B4AE04 /* HuanKeLaundryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HuanKeLaundryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FB4D32B1C05480100B4AE04 /* HuanKeLaundryUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HuanKeLaundryUITests.m; sourceTree = "<group>"; };
+		7FB4D32D1C05480100B4AE04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FB4D3421C054EB600B4AE04 /* GuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuideViewController.h; sourceTree = "<group>"; };
+		7FB4D3431C054EB600B4AE04 /* GuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuideViewController.m; sourceTree = "<group>"; };
+		7FB4D3451C054EDB00B4AE04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7FB4D3471C054EEC00B4AE04 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7FB4D3481C054EEC00B4AE04 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		7FB4D34B1C054FC800B4AE04 /* UIColor+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
+		7FB4D34C1C054FC800B4AE04 /* UIColor+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
+		7FB4D34E1C05575F00B4AE04 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		7FB4D34F1C05575F00B4AE04 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		7FB4D3511C05601500B4AE04 /* Read */ = {isa = PBXFileReference; lastKnownFileType = text; path = Read; sourceTree = "<group>"; };
+		7FB4D3531C0561F300B4AE04 /* 汉真广标艺术字体.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "汉真广标艺术字体.ttf"; sourceTree = "<group>"; };
+		7FB4D3551C05620900B4AE04 /* msyh.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = msyh.ttf; sourceTree = "<group>"; };
+		7FB4D3571C05621300B4AE04 /* STHeiti-Light.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "STHeiti-Light.ttc"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7FB4D3001C05480100B4AE04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FB4D3191C05480100B4AE04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FB4D3241C05480100B4AE04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7FB4D2FA1C05480100B4AE04 = {
+			isa = PBXGroup;
+			children = (
+				7FB4D3511C05601500B4AE04 /* Read */,
+				7FB4D3051C05480100B4AE04 /* HuanKeLaundry */,
+				7FB4D31F1C05480100B4AE04 /* HuanKeLaundryTests */,
+				7FB4D32A1C05480100B4AE04 /* HuanKeLaundryUITests */,
+				7FB4D3041C05480100B4AE04 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7FB4D3041C05480100B4AE04 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7FB4D3031C05480100B4AE04 /* HuanKeLaundry.app */,
+				7FB4D31C1C05480100B4AE04 /* HuanKeLaundryTests.xctest */,
+				7FB4D3271C05480100B4AE04 /* HuanKeLaundryUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7FB4D3051C05480100B4AE04 /* HuanKeLaundry */ = {
+			isa = PBXGroup;
+			children = (
+				7FB4D33A1C05481C00B4AE04 /* Model */,
+				7FB4D33B1C05482600B4AE04 /* View */,
+				7FB4D3391C05481000B4AE04 /* Controller */,
+				7FB4D3411C054BD100B4AE04 /* Network */,
+				7FB4D33D1C054A9E00B4AE04 /* Global */,
+				7FB4D33C1C054A8500B4AE04 /* Extension */,
+				7FB4D33E1C054AE000B4AE04 /* Resource */,
+				7FB4D3091C05480100B4AE04 /* AppDelegate.h */,
+				7FB4D30A1C05480100B4AE04 /* AppDelegate.m */,
+				7FB4D3171C05480100B4AE04 /* Info.plist */,
+				7FB4D3061C05480100B4AE04 /* Supporting Files */,
+			);
+			path = HuanKeLaundry;
+			sourceTree = "<group>";
+		};
+		7FB4D3061C05480100B4AE04 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7FB4D3071C05480100B4AE04 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7FB4D31F1C05480100B4AE04 /* HuanKeLaundryTests */ = {
+			isa = PBXGroup;
+			children = (
+				7FB4D3201C05480100B4AE04 /* HuanKeLaundryTests.m */,
+				7FB4D3221C05480100B4AE04 /* Info.plist */,
+			);
+			path = HuanKeLaundryTests;
+			sourceTree = "<group>";
+		};
+		7FB4D32A1C05480100B4AE04 /* HuanKeLaundryUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7FB4D32B1C05480100B4AE04 /* HuanKeLaundryUITests.m */,
+				7FB4D32D1C05480100B4AE04 /* Info.plist */,
+			);
+			path = HuanKeLaundryUITests;
+			sourceTree = "<group>";
+		};
+		7FB4D3391C05481000B4AE04 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7FB4D3421C054EB600B4AE04 /* GuideViewController.h */,
+				7FB4D3431C054EB600B4AE04 /* GuideViewController.m */,
+				7FB4D34E1C05575F00B4AE04 /* LoginViewController.h */,
+				7FB4D34F1C05575F00B4AE04 /* LoginViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7FB4D33A1C05481C00B4AE04 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7FB4D33B1C05482600B4AE04 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7FB4D33C1C054A8500B4AE04 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7FB4D34B1C054FC800B4AE04 /* UIColor+Extension.h */,
+				7FB4D34C1C054FC800B4AE04 /* UIColor+Extension.m */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		7FB4D33D1C054A9E00B4AE04 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		7FB4D33E1C054AE000B4AE04 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				7FB4D33F1C054B0300B4AE04 /* Image */,
+				7FB4D3401C054B0D00B4AE04 /* Xib */,
+				7FB4D3521C05618800B4AE04 /* Font */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		7FB4D33F1C054B0300B4AE04 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				7FB4D3451C054EDB00B4AE04 /* Assets.xcassets */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		7FB4D3401C054B0D00B4AE04 /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				7FB4D3471C054EEC00B4AE04 /* LaunchScreen.storyboard */,
+				7FB4D3481C054EEC00B4AE04 /* Main.storyboard */,
+			);
+			path = Xib;
+			sourceTree = "<group>";
+		};
+		7FB4D3411C054BD100B4AE04 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		7FB4D3521C05618800B4AE04 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				7FB4D3531C0561F300B4AE04 /* 汉真广标艺术字体.ttf */,
+				7FB4D3551C05620900B4AE04 /* msyh.ttf */,
+				7FB4D3571C05621300B4AE04 /* STHeiti-Light.ttc */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7FB4D3021C05480100B4AE04 /* HuanKeLaundry */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FB4D3301C05480100B4AE04 /* Build configuration list for PBXNativeTarget "HuanKeLaundry" */;
+			buildPhases = (
+				7FB4D2FF1C05480100B4AE04 /* Sources */,
+				7FB4D3001C05480100B4AE04 /* Frameworks */,
+				7FB4D3011C05480100B4AE04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HuanKeLaundry;
+			productName = HuanKeLaundry;
+			productReference = 7FB4D3031C05480100B4AE04 /* HuanKeLaundry.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7FB4D31B1C05480100B4AE04 /* HuanKeLaundryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FB4D3331C05480100B4AE04 /* Build configuration list for PBXNativeTarget "HuanKeLaundryTests" */;
+			buildPhases = (
+				7FB4D3181C05480100B4AE04 /* Sources */,
+				7FB4D3191C05480100B4AE04 /* Frameworks */,
+				7FB4D31A1C05480100B4AE04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7FB4D31E1C05480100B4AE04 /* PBXTargetDependency */,
+			);
+			name = HuanKeLaundryTests;
+			productName = HuanKeLaundryTests;
+			productReference = 7FB4D31C1C05480100B4AE04 /* HuanKeLaundryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7FB4D3261C05480100B4AE04 /* HuanKeLaundryUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FB4D3361C05480100B4AE04 /* Build configuration list for PBXNativeTarget "HuanKeLaundryUITests" */;
+			buildPhases = (
+				7FB4D3231C05480100B4AE04 /* Sources */,
+				7FB4D3241C05480100B4AE04 /* Frameworks */,
+				7FB4D3251C05480100B4AE04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7FB4D3291C05480100B4AE04 /* PBXTargetDependency */,
+			);
+			name = HuanKeLaundryUITests;
+			productName = HuanKeLaundryUITests;
+			productReference = 7FB4D3271C05480100B4AE04 /* HuanKeLaundryUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7FB4D2FB1C05480100B4AE04 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "湛礼翔";
+				TargetAttributes = {
+					7FB4D3021C05480100B4AE04 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					7FB4D31B1C05480100B4AE04 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 7FB4D3021C05480100B4AE04;
+					};
+					7FB4D3261C05480100B4AE04 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 7FB4D3021C05480100B4AE04;
+					};
+				};
+			};
+			buildConfigurationList = 7FB4D2FE1C05480100B4AE04 /* Build configuration list for PBXProject "HuanKeLaundry" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7FB4D2FA1C05480100B4AE04;
+			productRefGroup = 7FB4D3041C05480100B4AE04 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7FB4D3021C05480100B4AE04 /* HuanKeLaundry */,
+				7FB4D31B1C05480100B4AE04 /* HuanKeLaundryTests */,
+				7FB4D3261C05480100B4AE04 /* HuanKeLaundryUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7FB4D3011C05480100B4AE04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FB4D3561C05620900B4AE04 /* msyh.ttf in Resources */,
+				7FB4D34A1C054EEC00B4AE04 /* Main.storyboard in Resources */,
+				7FB4D3541C0561F300B4AE04 /* 汉真广标艺术字体.ttf in Resources */,
+				7FB4D3581C05621300B4AE04 /* STHeiti-Light.ttc in Resources */,
+				7FB4D3461C054EDB00B4AE04 /* Assets.xcassets in Resources */,
+				7FB4D3491C054EEC00B4AE04 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FB4D31A1C05480100B4AE04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FB4D3251C05480100B4AE04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7FB4D2FF1C05480100B4AE04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FB4D30B1C05480100B4AE04 /* AppDelegate.m in Sources */,
+				7FB4D3081C05480100B4AE04 /* main.m in Sources */,
+				7FB4D3441C054EB600B4AE04 /* GuideViewController.m in Sources */,
+				7FB4D34D1C054FC800B4AE04 /* UIColor+Extension.m in Sources */,
+				7FB4D3501C05575F00B4AE04 /* LoginViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FB4D3181C05480100B4AE04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FB4D3211C05480100B4AE04 /* HuanKeLaundryTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FB4D3231C05480100B4AE04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FB4D32C1C05480100B4AE04 /* HuanKeLaundryUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7FB4D31E1C05480100B4AE04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7FB4D3021C05480100B4AE04 /* HuanKeLaundry */;
+			targetProxy = 7FB4D31D1C05480100B4AE04 /* PBXContainerItemProxy */;
+		};
+		7FB4D3291C05480100B4AE04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7FB4D3021C05480100B4AE04 /* HuanKeLaundry */;
+			targetProxy = 7FB4D3281C05480100B4AE04 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7FB4D32E1C05480100B4AE04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7FB4D32F1C05480100B4AE04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7FB4D3311C05480100B4AE04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HuanKeLaundry/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zhan.com.HuanKeLaundry;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7FB4D3321C05480100B4AE04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HuanKeLaundry/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zhan.com.HuanKeLaundry;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7FB4D3341C05480100B4AE04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HuanKeLaundryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zhan.com.HuanKeLaundryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HuanKeLaundry.app/HuanKeLaundry";
+			};
+			name = Debug;
+		};
+		7FB4D3351C05480100B4AE04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HuanKeLaundryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zhan.com.HuanKeLaundryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HuanKeLaundry.app/HuanKeLaundry";
+			};
+			name = Release;
+		};
+		7FB4D3371C05480100B4AE04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HuanKeLaundryUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zhan.com.HuanKeLaundryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HuanKeLaundry;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		7FB4D3381C05480100B4AE04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HuanKeLaundryUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zhan.com.HuanKeLaundryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HuanKeLaundry;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7FB4D2FE1C05480100B4AE04 /* Build configuration list for PBXProject "HuanKeLaundry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FB4D32E1C05480100B4AE04 /* Debug */,
+				7FB4D32F1C05480100B4AE04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FB4D3301C05480100B4AE04 /* Build configuration list for PBXNativeTarget "HuanKeLaundry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FB4D3311C05480100B4AE04 /* Debug */,
+				7FB4D3321C05480100B4AE04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7FB4D3331C05480100B4AE04 /* Build configuration list for PBXNativeTarget "HuanKeLaundryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FB4D3341C05480100B4AE04 /* Debug */,
+				7FB4D3351C05480100B4AE04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7FB4D3361C05480100B4AE04 /* Build configuration list for PBXNativeTarget "HuanKeLaundryUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FB4D3371C05480100B4AE04 /* Debug */,
+				7FB4D3381C05480100B4AE04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7FB4D2FB1C05480100B4AE04 /* Project object */;
+}
