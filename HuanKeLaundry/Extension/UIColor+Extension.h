@@ -2,7 +2,7 @@
 //  UIColor+Extension.h
 //  HuanKeLaundry
 //
-//  Created by zhan on 15/11/25.
+//  Created by zhan on 15/11/26.
 //  Copyright © 2015年 湛礼翔. All rights reserved.
 //
 
@@ -10,16 +10,10 @@
 
 @interface UIColor (Extension)
 
-//返回#ff4d0f橙色用于标记价格
-+ (UIColor *)orangeColorForPrice;
-
-//返回#28ccfc蓝色
-+ (UIColor *)mainBlueColor;
-
-//返回#f4f4f4用于背景色
-+ (UIColor *)grayColorForBackground;
-
-//返回#dddddd用于边框线条
-+ (UIColor *)grayColorForBorder;
++ (UIColor *)orangeColorForPrice;    // #ff4d0f橙色,用于显示价格的
++ (UIColor *)blueForMainStyle;       // #28ccfc蓝色
++ (UIColor *)grayColorForBackground; // #f4f4f4，用于显示背景灰色
++ (UIColor *)grayColorForBorder;     // #dddddd,用于显示边框线条
++ (UIColor *)grayColorForIcon;       // #bcbdc3,用于显示图标
 
 @end

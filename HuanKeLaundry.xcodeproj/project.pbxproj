@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02138203CCAE14A5BF4C6D9F /* Pods_HuanKeLaundry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DAB20707E52EC9897ADEB10 /* Pods_HuanKeLaundry.framework */; };
+		7F61B9991C06B71D0076F6A9 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F61B9981C06B71D0076F6A9 /* LoginViewController.m */; };
+		7F61B99D1C06CB4A0076F6A9 /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F61B99C1C06CB4A0076F6A9 /* UIColor+Extension.m */; };
 		7FB4D3081C05480100B4AE04 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB4D3071C05480100B4AE04 /* main.m */; };
 		7FB4D30B1C05480100B4AE04 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB4D30A1C05480100B4AE04 /* AppDelegate.m */; };
 		7FB4D3211C05480100B4AE04 /* HuanKeLaundryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB4D3201C05480100B4AE04 /* HuanKeLaundryTests.m */; };
@@ -15,8 +18,6 @@
 		7FB4D3461C054EDB00B4AE04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FB4D3451C054EDB00B4AE04 /* Assets.xcassets */; };
 		7FB4D3491C054EEC00B4AE04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FB4D3471C054EEC00B4AE04 /* LaunchScreen.storyboard */; };
 		7FB4D34A1C054EEC00B4AE04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FB4D3481C054EEC00B4AE04 /* Main.storyboard */; };
-		7FB4D34D1C054FC800B4AE04 /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB4D34C1C054FC800B4AE04 /* UIColor+Extension.m */; };
-		7FB4D3501C05575F00B4AE04 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB4D34F1C05575F00B4AE04 /* LoginViewController.m */; };
 		7FB4D3541C0561F300B4AE04 /* 汉真广标艺术字体.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7FB4D3531C0561F300B4AE04 /* 汉真广标艺术字体.ttf */; };
 		7FB4D3561C05620900B4AE04 /* msyh.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7FB4D3551C05620900B4AE04 /* msyh.ttf */; };
 		7FB4D3581C05621300B4AE04 /* STHeiti-Light.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 7FB4D3571C05621300B4AE04 /* STHeiti-Light.ttc */; };
@@ -40,6 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A53EABB3733C5AB3B2303EE /* Pods-HuanKeLaundry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuanKeLaundry.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HuanKeLaundry/Pods-HuanKeLaundry.debug.xcconfig"; sourceTree = "<group>"; };
+		7F61B9971C06B71D0076F6A9 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		7F61B9981C06B71D0076F6A9 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		7F61B99B1C06CB4A0076F6A9 /* UIColor+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
+		7F61B99C1C06CB4A0076F6A9 /* UIColor+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
+		7F7AF2A41C059C4300C90D67 /* Defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
+		7F8E48CD1C05BC6600599043 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		7FB4D3031C05480100B4AE04 /* HuanKeLaundry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HuanKeLaundry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FB4D3071C05480100B4AE04 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7FB4D3091C05480100B4AE04 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -56,14 +64,12 @@
 		7FB4D3451C054EDB00B4AE04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7FB4D3471C054EEC00B4AE04 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7FB4D3481C054EEC00B4AE04 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		7FB4D34B1C054FC800B4AE04 /* UIColor+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
-		7FB4D34C1C054FC800B4AE04 /* UIColor+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
-		7FB4D34E1C05575F00B4AE04 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
-		7FB4D34F1C05575F00B4AE04 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		7FB4D3511C05601500B4AE04 /* Read */ = {isa = PBXFileReference; lastKnownFileType = text; path = Read; sourceTree = "<group>"; };
 		7FB4D3531C0561F300B4AE04 /* 汉真广标艺术字体.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "汉真广标艺术字体.ttf"; sourceTree = "<group>"; };
 		7FB4D3551C05620900B4AE04 /* msyh.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = msyh.ttf; sourceTree = "<group>"; };
 		7FB4D3571C05621300B4AE04 /* STHeiti-Light.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "STHeiti-Light.ttc"; sourceTree = "<group>"; };
+		9DAB20707E52EC9897ADEB10 /* Pods_HuanKeLaundry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HuanKeLaundry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBFAB7561796929936566A4C /* Pods-HuanKeLaundry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuanKeLaundry.release.xcconfig"; path = "Pods/Target Support Files/Pods-HuanKeLaundry/Pods-HuanKeLaundry.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02138203CCAE14A5BF4C6D9F /* Pods_HuanKeLaundry.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +98,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1BD30D44872FD00160AC493E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9DAB20707E52EC9897ADEB10 /* Pods_HuanKeLaundry.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7E22680E2746B92E31CD542E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0A53EABB3733C5AB3B2303EE /* Pods-HuanKeLaundry.debug.xcconfig */,
+				FBFAB7561796929936566A4C /* Pods-HuanKeLaundry.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7F61B99A1C06CAEB0076F6A9 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7F61B99B1C06CB4A0076F6A9 /* UIColor+Extension.h */,
+				7F61B99C1C06CB4A0076F6A9 /* UIColor+Extension.m */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		7F7AF29F1C0591C100C90D67 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		7F7AF2A31C059BD600C90D67 /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				7F7AF2A41C059C4300C90D67 /* Defines.h */,
+			);
+			path = Define;
+			sourceTree = "<group>";
+		};
 		7FB4D2FA1C05480100B4AE04 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +147,8 @@
 				7FB4D31F1C05480100B4AE04 /* HuanKeLaundryTests */,
 				7FB4D32A1C05480100B4AE04 /* HuanKeLaundryUITests */,
 				7FB4D3041C05480100B4AE04 /* Products */,
+				7E22680E2746B92E31CD542E /* Pods */,
+				1BD30D44872FD00160AC493E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,8 +169,9 @@
 				7FB4D33B1C05482600B4AE04 /* View */,
 				7FB4D3391C05481000B4AE04 /* Controller */,
 				7FB4D3411C054BD100B4AE04 /* Network */,
-				7FB4D33D1C054A9E00B4AE04 /* Global */,
-				7FB4D33C1C054A8500B4AE04 /* Extension */,
+				7F7AF29F1C0591C100C90D67 /* Global */,
+				7F7AF2A31C059BD600C90D67 /* Define */,
+				7F61B99A1C06CAEB0076F6A9 /* Extension */,
 				7FB4D33E1C054AE000B4AE04 /* Resource */,
 				7FB4D3091C05480100B4AE04 /* AppDelegate.h */,
 				7FB4D30A1C05480100B4AE04 /* AppDelegate.m */,
@@ -134,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				7FB4D3071C05480100B4AE04 /* main.m */,
+				7F8E48CD1C05BC6600599043 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -161,8 +213,8 @@
 			children = (
 				7FB4D3421C054EB600B4AE04 /* GuideViewController.h */,
 				7FB4D3431C054EB600B4AE04 /* GuideViewController.m */,
-				7FB4D34E1C05575F00B4AE04 /* LoginViewController.h */,
-				7FB4D34F1C05575F00B4AE04 /* LoginViewController.m */,
+				7F61B9971C06B71D0076F6A9 /* LoginViewController.h */,
+				7F61B9981C06B71D0076F6A9 /* LoginViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -179,22 +231,6 @@
 			children = (
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		7FB4D33C1C054A8500B4AE04 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				7FB4D34B1C054FC800B4AE04 /* UIColor+Extension.h */,
-				7FB4D34C1C054FC800B4AE04 /* UIColor+Extension.m */,
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
-		7FB4D33D1C054A9E00B4AE04 /* Global */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Global;
 			sourceTree = "<group>";
 		};
 		7FB4D33E1C054AE000B4AE04 /* Resource */ = {
@@ -248,9 +284,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7FB4D3301C05480100B4AE04 /* Build configuration list for PBXNativeTarget "HuanKeLaundry" */;
 			buildPhases = (
+				6D05CB6EFF0541D643F50EDD /* Check Pods Manifest.lock */,
 				7FB4D2FF1C05480100B4AE04 /* Sources */,
 				7FB4D3001C05480100B4AE04 /* Frameworks */,
 				7FB4D3011C05480100B4AE04 /* Resources */,
+				AC36951B4EFF0951F89403F4 /* Embed Pods Frameworks */,
+				2C4E1F6E20D03B8A091EBE71 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -369,16 +408,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2C4E1F6E20D03B8A091EBE71 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HuanKeLaundry/Pods-HuanKeLaundry-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D05CB6EFF0541D643F50EDD /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AC36951B4EFF0951F89403F4 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HuanKeLaundry/Pods-HuanKeLaundry-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7FB4D2FF1C05480100B4AE04 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F61B9991C06B71D0076F6A9 /* LoginViewController.m in Sources */,
 				7FB4D30B1C05480100B4AE04 /* AppDelegate.m in Sources */,
+				7F61B99D1C06CB4A0076F6A9 /* UIColor+Extension.m in Sources */,
 				7FB4D3081C05480100B4AE04 /* main.m in Sources */,
 				7FB4D3441C054EB600B4AE04 /* GuideViewController.m in Sources */,
-				7FB4D34D1C054FC800B4AE04 /* UIColor+Extension.m in Sources */,
-				7FB4D3501C05575F00B4AE04 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +527,8 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/zhan/Desktop/HuanKeLaundry/HuanKeLaundry/PrefixHeader.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -454,6 +543,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SHARED_PRECOMPS_DIR = "";
 			};
 			name = Debug;
 		};
@@ -481,6 +571,8 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/zhan/Desktop/HuanKeLaundry/HuanKeLaundry/PrefixHeader.pch;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -490,12 +582,14 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SHARED_PRECOMPS_DIR = "";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		7FB4D3311C05480100B4AE04 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A53EABB3733C5AB3B2303EE /* Pods-HuanKeLaundry.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HuanKeLaundry/Info.plist;
@@ -507,6 +601,7 @@
 		};
 		7FB4D3321C05480100B4AE04 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBFAB7561796929936566A4C /* Pods-HuanKeLaundry.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HuanKeLaundry/Info.plist;
@@ -583,6 +678,7 @@
 				7FB4D3321C05480100B4AE04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7FB4D3331C05480100B4AE04 /* Build configuration list for PBXNativeTarget "HuanKeLaundryTests" */ = {
 			isa = XCConfigurationList;
@@ -591,6 +687,7 @@
 				7FB4D3351C05480100B4AE04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7FB4D3361C05480100B4AE04 /* Build configuration list for PBXNativeTarget "HuanKeLaundryUITests" */ = {
 			isa = XCConfigurationList;
@@ -599,6 +696,7 @@
 				7FB4D3381C05480100B4AE04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

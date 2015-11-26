@@ -1,0 +1,16 @@
+//
+//  PrefixHeader.pch
+//  HuanKeLaundry
+//
+//  Created by zhan on 15/11/25.
+//  Copyright © 2015年 湛礼翔. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "Defines.h"
+#import "UIColor+Extension.h"
+
+#endif
+
