@@ -53,7 +53,9 @@
   //添加loginButton以及设置其约束
   _loginButton = [[UIButton alloc] init];
   [_loginButton setImage:[UIImage imageNamed:@"0-1-1"] forState: 0];
-  [_loginButton addTarget:self action: @selector(loginButtonClick) forControlEvents: 1 <<  6];
+  [_loginButton addTarget:self
+                   action: @selector(loginButtonClick)
+         forControlEvents: 1 <<  6];
   [self.view addSubview: _loginButton];
   
   

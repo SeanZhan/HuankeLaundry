@@ -10,6 +10,7 @@
 		02138203CCAE14A5BF4C6D9F /* Pods_HuanKeLaundry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DAB20707E52EC9897ADEB10 /* Pods_HuanKeLaundry.framework */; };
 		7F61B9991C06B71D0076F6A9 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F61B9981C06B71D0076F6A9 /* LoginViewController.m */; };
 		7F61B99D1C06CB4A0076F6A9 /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F61B99C1C06CB4A0076F6A9 /* UIColor+Extension.m */; };
+		7F61B9A01C06EF7F0076F6A9 /* Networke.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F61B99F1C06EF7F0076F6A9 /* Networke.m */; };
 		7FB4D3081C05480100B4AE04 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB4D3071C05480100B4AE04 /* main.m */; };
 		7FB4D30B1C05480100B4AE04 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB4D30A1C05480100B4AE04 /* AppDelegate.m */; };
 		7FB4D3211C05480100B4AE04 /* HuanKeLaundryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB4D3201C05480100B4AE04 /* HuanKeLaundryTests.m */; };
@@ -46,6 +47,8 @@
 		7F61B9981C06B71D0076F6A9 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		7F61B99B1C06CB4A0076F6A9 /* UIColor+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
 		7F61B99C1C06CB4A0076F6A9 /* UIColor+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
+		7F61B99E1C06EF7F0076F6A9 /* Networke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Networke.h; sourceTree = "<group>"; };
+		7F61B99F1C06EF7F0076F6A9 /* Networke.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Networke.m; sourceTree = "<group>"; };
 		7F7AF2A41C059C4300C90D67 /* Defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
 		7F8E48CD1C05BC6600599043 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		7FB4D3031C05480100B4AE04 /* HuanKeLaundry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HuanKeLaundry.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -263,6 +266,8 @@
 		7FB4D3411C054BD100B4AE04 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				7F61B99E1C06EF7F0076F6A9 /* Networke.h */,
+				7F61B99F1C06EF7F0076F6A9 /* Networke.m */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -461,6 +466,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F61B9A01C06EF7F0076F6A9 /* Networke.m in Sources */,
 				7F61B9991C06B71D0076F6A9 /* LoginViewController.m in Sources */,
 				7FB4D30B1C05480100B4AE04 /* AppDelegate.m in Sources */,
 				7F61B99D1C06CB4A0076F6A9 /* UIColor+Extension.m in Sources */,

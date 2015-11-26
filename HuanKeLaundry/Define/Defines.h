@@ -13,7 +13,9 @@
 //MARK: - 定义常用字体
 
 //定义navigationTitle的字体格式
-#define  fontForHeitiSC17  [UIFont fontWithName:@"Heiti SC" size:17]
+#define fontAsHeitiSC19  [UIFont fontWithName:@"Heiti SC" size:19]
+#define fontAsHeitiSC15  [UIFont fontWithName:@"Heiti SC" size:15]
+#define fontAsHeitiSC12  [UIFont fontWithName:@"Heiti SC" size:12]
 
 
 //MARK: - 定义两个全局变量，获取当前设备的屏幕宽度和高度
