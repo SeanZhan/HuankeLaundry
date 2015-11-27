@@ -10,5 +10,8 @@
 
 @interface Networke : NSObject
 
++ (Networke *)shardeNetwork;
+
+- (void)getID;//:(NSString *)Name :(NSString *)passworld;
 
 @end

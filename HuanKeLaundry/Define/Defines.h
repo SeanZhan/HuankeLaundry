@@ -23,6 +23,10 @@
 
 #define screenHeight  [[UIScreen mainScreen] bounds].size.height
 
+//MARK: - 定义获取Json数据的服务器地址
+#define WEB_SERVER  @"http://wentao.uicp.cn:5525/"
+#define GET_ID      @"xy/login.php?name=%@&password=%@"
+
 
 
 
