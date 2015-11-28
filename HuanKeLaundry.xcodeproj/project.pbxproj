@@ -11,6 +11,11 @@
 		7F61B9991C06B71D0076F6A9 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F61B9981C06B71D0076F6A9 /* LoginViewController.m */; };
 		7F61B99D1C06CB4A0076F6A9 /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F61B99C1C06CB4A0076F6A9 /* UIColor+Extension.m */; };
 		7F61B9A01C06EF7F0076F6A9 /* Networke.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F61B99F1C06EF7F0076F6A9 /* Networke.m */; };
+		7F8FFA3D1C0866830099CB38 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F8FFA3C1C0866830099CB38 /* TabBarController.m */; };
+		7F8FFA491C0867130099CB38 /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F8FFA481C0867130099CB38 /* HomePageViewController.m */; };
+		7F8FFA4C1C08673E0099CB38 /* BasketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F8FFA4B1C08673E0099CB38 /* BasketViewController.m */; };
+		7F8FFA4F1C0867570099CB38 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F8FFA4E1C0867570099CB38 /* MyViewController.m */; };
+		7F8FFA521C0867650099CB38 /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F8FFA511C0867650099CB38 /* MoreViewController.m */; };
 		7FB4D3081C05480100B4AE04 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB4D3071C05480100B4AE04 /* main.m */; };
 		7FB4D30B1C05480100B4AE04 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB4D30A1C05480100B4AE04 /* AppDelegate.m */; };
 		7FB4D3211C05480100B4AE04 /* HuanKeLaundryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB4D3201C05480100B4AE04 /* HuanKeLaundryTests.m */; };
@@ -51,6 +56,16 @@
 		7F61B99F1C06EF7F0076F6A9 /* Networke.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Networke.m; sourceTree = "<group>"; };
 		7F7AF2A41C059C4300C90D67 /* Defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
 		7F8E48CD1C05BC6600599043 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		7F8FFA3B1C0866830099CB38 /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
+		7F8FFA3C1C0866830099CB38 /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
+		7F8FFA471C0867130099CB38 /* HomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageViewController.h; sourceTree = "<group>"; };
+		7F8FFA481C0867130099CB38 /* HomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageViewController.m; sourceTree = "<group>"; };
+		7F8FFA4A1C08673E0099CB38 /* BasketViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasketViewController.h; sourceTree = "<group>"; };
+		7F8FFA4B1C08673E0099CB38 /* BasketViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasketViewController.m; sourceTree = "<group>"; };
+		7F8FFA4D1C0867570099CB38 /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
+		7F8FFA4E1C0867570099CB38 /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
+		7F8FFA501C0867650099CB38 /* MoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreViewController.h; sourceTree = "<group>"; };
+		7F8FFA511C0867650099CB38 /* MoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreViewController.m; sourceTree = "<group>"; };
 		7FB4D3031C05480100B4AE04 /* HuanKeLaundry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HuanKeLaundry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FB4D3071C05480100B4AE04 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7FB4D3091C05480100B4AE04 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -218,6 +233,16 @@
 				7FB4D3431C054EB600B4AE04 /* GuideViewController.m */,
 				7F61B9971C06B71D0076F6A9 /* LoginViewController.h */,
 				7F61B9981C06B71D0076F6A9 /* LoginViewController.m */,
+				7F8FFA3B1C0866830099CB38 /* TabBarController.h */,
+				7F8FFA3C1C0866830099CB38 /* TabBarController.m */,
+				7F8FFA471C0867130099CB38 /* HomePageViewController.h */,
+				7F8FFA481C0867130099CB38 /* HomePageViewController.m */,
+				7F8FFA4A1C08673E0099CB38 /* BasketViewController.h */,
+				7F8FFA4B1C08673E0099CB38 /* BasketViewController.m */,
+				7F8FFA4D1C0867570099CB38 /* MyViewController.h */,
+				7F8FFA4E1C0867570099CB38 /* MyViewController.m */,
+				7F8FFA501C0867650099CB38 /* MoreViewController.h */,
+				7F8FFA511C0867650099CB38 /* MoreViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -466,11 +491,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F8FFA491C0867130099CB38 /* HomePageViewController.m in Sources */,
+				7F8FFA3D1C0866830099CB38 /* TabBarController.m in Sources */,
 				7F61B9A01C06EF7F0076F6A9 /* Networke.m in Sources */,
 				7F61B9991C06B71D0076F6A9 /* LoginViewController.m in Sources */,
+				7F8FFA4F1C0867570099CB38 /* MyViewController.m in Sources */,
+				7F8FFA4C1C08673E0099CB38 /* BasketViewController.m in Sources */,
 				7FB4D30B1C05480100B4AE04 /* AppDelegate.m in Sources */,
 				7F61B99D1C06CB4A0076F6A9 /* UIColor+Extension.m in Sources */,
 				7FB4D3081C05480100B4AE04 /* main.m in Sources */,
+				7F8FFA521C0867650099CB38 /* MoreViewController.m in Sources */,
 				7FB4D3441C054EB600B4AE04 /* GuideViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

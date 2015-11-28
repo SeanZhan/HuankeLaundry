@@ -7,7 +7,6 @@
 //
 
 #import "Networke.h"
-#import <SBJson/SBJson4.h>
 #import <AFNetworking/AFNetworking.h>
 
 static Networke *networke = nil;
@@ -30,6 +29,7 @@ static Networke *networke = nil;
   return networke;
 }
 
+//MARK: - 用于验证用户名和密码的方法
 - (void)getID//:(NSString *)Name :(NSString *)passworld
 {
   NSLog(@"1");     //999999999999

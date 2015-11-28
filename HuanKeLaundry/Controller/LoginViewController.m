@@ -152,11 +152,7 @@
 //MARK: - _loginButton点击事件
 - (void)loginButtonClick
 {
-  
-  Networke *nt = [Networke shardeNetwork];
-  
-  [nt getID];
-  
+  [[Networke shardeNetwork] getID];
 }
 
 @end
