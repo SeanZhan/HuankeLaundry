@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Networke : NSObject
+@interface HttpTool : NSObject
 
-+ (Networke *)shardeNetwork;
++ (instancetype)shardeNetwork;
 
 - (void)getID;//:(NSString *)Name :(NSString *)passworld;
 

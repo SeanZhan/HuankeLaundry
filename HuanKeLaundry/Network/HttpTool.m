@@ -6,33 +6,32 @@
 //  Copyright © 2015年 湛礼翔. All rights reserved.
 //
 
-#import "Networke.h"
+#import "HttpTool.h"
 #import <AFNetworking/AFNetworking.h>
 
-static Networke *networke = nil;
+@implementation HttpTool
 
-@implementation Networke
+static HttpTool *_instance = nil;
 
-+ (Networke *)shardeNetwork
+//MARK: 创建单例的方法
++ (instancetype)shardeNetwork
 {
-  static dispatch_once_t oneceToken = 0;
-  dispatch_once(&oneceToken, ^{
     
-    networke = [[[self class] alloc] init];
+    if (_instance == nil) {
+      _instance = [[[self class] alloc] init];
+    }
 
-  });
-  return networke;
+  return _instance;
 }
 
-+ (id)allocWithZone:(struct _NSZone *)zone
++ (instancetype)allocWithZone:(struct _NSZone *)zone
 {
-  return networke;
+  return _instance;
 }
 
 //MARK: - 用于验证用户名和密码的方法
 - (void)getID//:(NSString *)Name :(NSString *)passworld
 {
-  NSLog(@"1");     //999999999999
   AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
   
   NSString *getID = @"http://wentao.uicp.cn:5525/xy/login.php?name=maizi&password=111111";
@@ -41,8 +40,7 @@ static Networke *networke = nil;
     parameters:nil
        success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
          
-         NSString *result = [responseObject
-                        objectForKey: @"result"];
+         NSString *result = [responseObject objectForKey: @"result"];
          
          NSLog(@"%@",result);
          
