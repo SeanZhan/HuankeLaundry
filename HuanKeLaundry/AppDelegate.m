@@ -8,13 +8,18 @@
 
 #import "AppDelegate.h"
 #import "GuideViewController.h"
+#import "LoginViewController.h"
+#import "HomePageViewController.h" //------->>>临时
+#import "MoreViewController.h"     //------->>>临时
+#import "MyViewController.h"       //------->>>临时
+#import "TabBarController.h"      //-------->>>临时
 
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-  UINavigationController *nv = [[UINavigationController alloc] initWithRootViewController:[[GuideViewController alloc] init]];
+  UINavigationController *nv = [[UINavigationController alloc] initWithRootViewController: [[GuideViewController alloc] init]];
   [nv setNavigationBarHidden: true];
   self.window.rootViewController = nv;
   return YES;

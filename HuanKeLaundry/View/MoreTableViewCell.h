@@ -10,4 +10,14 @@
 
 @interface MoreTableViewCell : UITableViewCell
 
+@property (nonatomic) UIImageView   *iconImageView;
+@property (nonatomic) UILabel       *hintLable;
+@property (nonatomic) UIImageView   *detailImageView;
+@property (nonatomic) UIView        *separateLine;
+
+// 设置iconImageView的image和hintLabel的text的方法
+- (void)setIconImage:(NSString *)iconImageString;
+- (void)setHintLableText:(NSString *)hintLableText;
+
+
 @end

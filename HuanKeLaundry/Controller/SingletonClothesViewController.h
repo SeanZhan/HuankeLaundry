@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CustomSegmented.h"
 
-@interface SingletonClothesViewController : UIViewController
+
+@interface SingletonClothesViewController : UIViewController<CustomSegmentedDelegate>
 
 @end

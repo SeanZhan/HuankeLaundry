@@ -10,15 +10,18 @@
 
 @protocol CustomSegmentedDelegate <NSObject>
 
-- (NSInteger)
+- (void)didSelect:(int)tag;
 
 @end
 
+
 @interface CustomSegmented : UIView
 
-@property (nonatomic) NSInteger *buttonTag;
+@property (nonatomic) int buttonTag;
 
 @property (nonatomic) UIView *vernierView;
+
+@property (nonatomic) id<CustomSegmentedDelegate> delegate;
 
 -(instancetype)initWithButtonArray:(NSArray *)ButtonArray
                              frame:(CGRect)frame;

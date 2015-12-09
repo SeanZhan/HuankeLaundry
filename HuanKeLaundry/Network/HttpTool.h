@@ -10,8 +10,10 @@
 
 @interface HttpTool : NSObject
 
-+ (instancetype)shardeNetwork;
++ (instancetype)shardeInstance;
 
-- (void)getID;//:(NSString *)Name :(NSString *)passworld;
+- (void)getID:(NSString *)Name
+     password:(NSString *)passworld
+completionHandler: (void (^)(NSString *result))completionHandler;
 
 @end

@@ -6,7 +6,7 @@
 //  Copyright © 2015年 湛礼翔. All rights reserved.
 //
 
-#import "UIColor+Extension.h"
+#import "UIColor+Category.h"
 
 @implementation UIColor (Extension)
 

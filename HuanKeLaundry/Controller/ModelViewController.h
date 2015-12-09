@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CustomCounter.h"
 
-@interface ModelViewController : UIViewController
+@interface ModelViewController : UIViewController<CustomCounterDelegate>
 
 @end

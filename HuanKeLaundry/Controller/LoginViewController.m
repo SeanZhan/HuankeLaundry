@@ -8,18 +8,19 @@
 
 #import "LoginViewController.h"
 #import <Masonry/Masonry.h>
-#import "Networke.h"
+#import "HttpTool.h"
+#import "TabBarController.h"
 
 @interface LoginViewController ()
 
-@property (nonatomic) UIView *navigationBar;
-@property (nonatomic) UILabel *navigationTitle;
+@property (nonatomic) UIView      *navigationBar;
+@property (nonatomic) UILabel     *navigationTitle;
 @property (nonatomic) UITextField *poneNumberTextField;
 @property (nonatomic) UITextField *captchaTextField;
-@property (nonatomic) UIButton *getCaptchaButton;
-@property (nonatomic) UIButton *loginButton;
-@property (nonatomic) UILabel *hintLabel;
-@property (nonatomic) UIButton *userAgreementButton;
+@property (nonatomic) UIButton    *getCaptchaButton;
+@property (nonatomic) UIButton    *loginButton;
+@property (nonatomic) UILabel     *hintLabel;
+@property (nonatomic) UIButton    *userAgreementButton;
 @property (nonatomic) UITapGestureRecognizer *tapGestuer;
 
 @end
@@ -39,7 +40,7 @@
 //MARK: - 设置UI
 - (void)setUI
 {
-  self.view.backgroundColor = [UIColor grayColor];
+  self.view.backgroundColor = [UIColor grayColorForBackground];
   //设置_navigationBar的各项属性和约束
   _navigationBar = [[UIView alloc] init];
   _navigationBar.backgroundColor = [UIColor whiteColor];
@@ -55,18 +56,20 @@
   _navigationTitle.font = fontAsHeitiSC19;
   [_navigationTitle sizeToFit];
   [_navigationBar addSubview:_navigationTitle];
-  [_navigationTitle mas_makeConstraints:^(MASConstraintMaker *make) {
+  [_navigationTitle mas_makeConstraints:^(MASConstraintMaker *make)
+  {
     make.centerX.equalTo(self.view);
     make.bottom.equalTo(_navigationBar).offset(-10);
   }];
   
   //设置_getCaptchaButton的各项属性和约束
   _getCaptchaButton = [[UIButton alloc] init];
-  _getCaptchaButton.backgroundColor = [UIColor redColor];
+  _getCaptchaButton.backgroundColor = [UIColor grayColorForIcon];
   [_getCaptchaButton setTitle: @"获取验证码" forState: 0];
   [_getCaptchaButton titleLabel].font = fontAsHeitiSC19;
   [self.view addSubview: _getCaptchaButton];
-  [_getCaptchaButton mas_makeConstraints:^(MASConstraintMaker *make) {
+  [_getCaptchaButton mas_makeConstraints:^(MASConstraintMaker *make)
+  {
     make.top.equalTo(_navigationBar.mas_bottom).offset(20);
     make.trailing.equalTo(_navigationBar).offset(-15);
     make.width.equalTo(@110);
@@ -76,11 +79,13 @@
   //设置_poneNumberTextField的各项属性和约束
   _poneNumberTextField = [[UITextField alloc] init];
   _poneNumberTextField.backgroundColor = [UIColor whiteColor];
-//  _poneNumberTextField.layer.borderColor = [];
-//  _poneNumberTextField.layer.borderWidth = 1.0;
+  _poneNumberTextField.layer.borderColor = [[UIColor grayColorForBorder] CGColor];
+  _poneNumberTextField.layer.borderWidth = 1.0;
   _poneNumberTextField.placeholder = @"  请输入手机号码";
+  _poneNumberTextField.keyboardType = UIKeyboardTypeNamePhonePad;
   [self.view addSubview: _poneNumberTextField];
-  [_poneNumberTextField mas_makeConstraints:^(MASConstraintMaker *make) {
+  [_poneNumberTextField mas_makeConstraints:^(MASConstraintMaker *make)
+  {
     make.top.equalTo(_navigationBar.mas_bottom).offset(20);
     make.leading.equalTo(self.view).offset(15);
     make.trailing.equalTo(_getCaptchaButton.mas_leading).offset(-10);
@@ -90,7 +95,11 @@
   //设置_captchaTextField的各项属性和约束
   _captchaTextField = [[UITextField alloc] init];
   _captchaTextField.backgroundColor = [UIColor whiteColor];
+  _captchaTextField.layer.borderColor = [[UIColor grayColorForBorder] CGColor];
+  _captchaTextField.layer.borderWidth = 1.0;
   _captchaTextField.placeholder = @"  请输入验证码";
+  _captchaTextField.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
+  _captchaTextField.secureTextEntry = true;
   [self.view addSubview: _captchaTextField];
   [_captchaTextField mas_makeConstraints:^(MASConstraintMaker *make) {
     make.leading.equalTo(_poneNumberTextField);
@@ -152,7 +161,30 @@
 //MARK: - _loginButton点击事件
 - (void)loginButtonClick
 {
-  [[Networke shardeNetwork] getID];
+  HttpTool *httptool = [HttpTool shardeInstance];
+  
+  [httptool getID: _poneNumberTextField.text
+         password: _captchaTextField.text
+completionHandler:^(NSString *result) {
+  
+  if ([result  isEqual: @"success"]) {
+    [self.navigationController pushViewController: [[TabBarController alloc] init]
+                                         animated: true];
+  } else {
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle: @"温馨提示"
+                                                                   message: result
+                                                            preferredStyle: UIAlertControllerStyleAlert];
+    UIAlertAction *cancleAction = [UIAlertAction actionWithTitle: @"确定"
+                                                           style: UIAlertActionStyleCancel
+                                                         handler: nil];
+    [alert addAction: cancleAction];
+    [self presentViewController: alert
+                       animated: true
+                     completion: nil];
+    
+  }
+    }];
+  
 }
 
 @end

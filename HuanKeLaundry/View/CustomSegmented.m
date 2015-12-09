@@ -57,6 +57,11 @@
     //初始化_buttonTag
     _buttonTag = 0;
     
+    //给_buttonTag属性添加观察者
+    [self addObserver: self
+           forKeyPath: @"buttonTag"
+              options: NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld
+              context: nil];
   }
   
   return self;
@@ -73,14 +78,52 @@
 - (instancetype)initWithFrame:(CGRect)frame
 {
   [NSException  raise: @"CustomCounterInitialization"
-               format: @"use initWithButtonArray,not init"];
+               format: @"use initWithButtonArray,not initWithFrame"];
   return nil;
 }
 
 //MARK: - button的点击事件
 - (void)buttonClick:(id)sender
 {
-  _buttonTag = [sender tag];
+  self.buttonTag = [sender tag];
+  [_delegate didSelect: _buttonTag];
 }
+
+//MARK: - 实现当前类属性观察的回调方法
+- (void)observeValueForKeyPath:(NSString *)keyPath
+                      ofObject:(id)object
+                        change:(NSDictionary<NSString *,id> *)change
+                       context:(void *)context
+{
+  NSString *newValueString = [change objectForKey: NSKeyValueChangeNewKey];
+  NSString *oldValueString = [change objectForKey: NSKeyValueChangeOldKey];
+  
+  int newValue = [newValueString intValue];
+  int oldValue = [oldValueString intValue];
+  
+
+  UIButton *currentButton = [self subviews][newValue] ;
+  [currentButton setTitleColor: [UIColor blueForMainStyle]
+                      forState: UIControlStateNormal];
+  
+  [UIView animateWithDuration: 0.1 animations:^{
+    _vernierView.frame = CGRectMake(currentButton.frame.origin.x,
+                                    currentButton.frame.size.height-5,
+                                    currentButton.frame.size.width,
+                                    5);
+  }];
+  
+  UIButton *unCheckedButton = [self subviews][oldValue];
+  [unCheckedButton setTitleColor: [UIColor blackColor]
+                        forState: UIControlStateNormal];
+}
+
+//MARK: - 移除观察者
+- (void)dealloc
+{
+ [self removeObserver: self
+           forKeyPath: @"buttonTag"];
+}
+
 
 @end

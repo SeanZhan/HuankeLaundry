@@ -12,6 +12,7 @@
 
 @interface GuideViewController ()
 
+
 @property (nonatomic) UIScrollView *scrollView;
 
 @property (nonatomic) UIButton *loginButton;
@@ -74,4 +75,6 @@
   [self.navigationController pushViewController:vc animated:true];
 }
 
+- (IBAction)buttonclick:(id)sender {
+}
 @end
