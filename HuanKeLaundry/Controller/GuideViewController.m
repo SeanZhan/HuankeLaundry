@@ -75,6 +75,4 @@
   [self.navigationController pushViewController:vc animated:true];
 }
 
-- (IBAction)buttonclick:(id)sender {
-}
 @end

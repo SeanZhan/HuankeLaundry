@@ -236,7 +236,7 @@
                    completion: nil];
 }
 
-//MARK: -
+//MARK: -“件洗”按钮的点击事件
 - (void)SingletonButtonClick
 {
   [self.navigationController pushViewController:[[SingletonClothesViewController alloc] init]
