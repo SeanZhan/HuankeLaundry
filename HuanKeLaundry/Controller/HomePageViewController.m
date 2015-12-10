@@ -96,14 +96,10 @@
   
   //设置_scrollView的属性与约束
   _scrollView = [[UIScrollView alloc] init];
+  _scrollView.pagingEnabled = true;
+  _scrollView.showsHorizontalScrollIndicator = false;
+  _scrollView.frame = CGRectMake(0, 64, screenWidth, self.view.frame.size.height*0.238);
   [self.view addSubview: _scrollView];
-  
-  [_scrollView mas_makeConstraints:^(MASConstraintMaker *make)
-  {
-    make.leading.trailing.equalTo(self.view);
-    make.top.equalTo(_navigationBar.mas_bottom);
-    make.height.equalTo(self.view).multipliedBy(0.238);
-  }];
   
   //设置_pageControl的属性与约束
   _pageControl = [[UIPageControl alloc] init];
@@ -188,12 +184,12 @@
 //MARK: 请求广告页面数据
 - (void)getAds
 {
-  [[HttpTool shardeInstance] getHomepageImage:^(NSArray *imageAddress) {
-    
-    NSLog(@"%@",imageAddress);  //------------ 验证地址是否请求回来
-    
-   //[self setImageView: imageAddress];  //-------阻塞线程
+  __weak HomePageViewController *weakSelf = self;
   
+  [[HttpTool shardeInstance] getHomepageImage:^(NSArray *imageAddress) {
+    NSLog(@"%@",imageAddress);
+    HomePageViewController *innerSelf = weakSelf;
+    [innerSelf setImageView: imageAddress];
   }];
   
 }
@@ -210,17 +206,18 @@
   for (int i = 0; i < imageAddress.count; i++) {
     __block UIImageView *imageView = [[UIImageView alloc] init];
     imageView.frame = CGRectMake(screenWidth * i,
-                                 64,
+                                 0,
                                  screenWidth,
                                  _scrollView.frame.size.height);
+    imageView.backgroundColor = [UIColor blueForMainStyle];
     [_scrollView addSubview: imageView];
     
     [imageView startLoader];
-    [imageView sd_setImageWithURL: [[NSURL alloc] initWithString: imageAddress[i]]
+    [imageView sd_setImageWithURL: imageAddress[i]
                  placeholderImage: nil
                           options: SDWebImageCacheMemoryOnly | SDWebImageRefreshCached
                          progress:^(NSInteger receivedSize, NSInteger expectedSize) {
-                           [imageView updateImageDownloadProgress: receivedSize / expectedSize];
+                           [imageView updateImageDownloadProgress: [[NSNumber numberWithInt:receivedSize] floatValue]/[[NSNumber numberWithInt:expectedSize] floatValue]];
                          }
                         completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
                           [imageView reveal];
@@ -242,6 +239,5 @@
   [self.navigationController pushViewController:[[SingletonClothesViewController alloc] init]
                                        animated: true];
 }
-
 
 @end

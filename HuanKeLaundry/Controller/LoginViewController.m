@@ -163,12 +163,16 @@
 {
   HttpTool *httptool = [HttpTool shardeInstance];
   
+  __weak LoginViewController *weakSelf = self;
+  
   [httptool getID: _poneNumberTextField.text
          password: _captchaTextField.text
 completionHandler:^(NSString *result) {
   
+  LoginViewController *innerSelf = weakSelf;
+  
   if ([result  isEqual: @"success"]) {
-    [self.navigationController pushViewController: [[TabBarController alloc] init]
+    [innerSelf.navigationController pushViewController: [[TabBarController alloc] init]
                                          animated: true];
   } else {
     UIAlertController *alert = [UIAlertController alertControllerWithTitle: @"温馨提示"
@@ -178,7 +182,7 @@ completionHandler:^(NSString *result) {
                                                            style: UIAlertActionStyleCancel
                                                          handler: nil];
     [alert addAction: cancleAction];
-    [self presentViewController: alert
+    [innerSelf presentViewController: alert
                        animated: true
                      completion: nil];
     
