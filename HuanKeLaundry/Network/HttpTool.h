@@ -16,4 +16,6 @@
      password:(NSString *)passworld
 completionHandler: (void (^)(NSString *result))completionHandler;
 
+- (void)getHomepageImage: (void (^)(NSArray *imageAddress))completionHandler;
+
 @end

@@ -33,9 +33,9 @@
 #define screenHeight  [[UIScreen mainScreen] bounds].size.height
 
 //MARK: - 定义获取Json数据的服务器地址
-#define WEB_SERVER  @"http://wentao.uicp.cn:5525/"
-#define GET_ID      @"xy/login.php?name=%@&password=%@"
-
+#define GET_ID            @"http://wentao.uicp.cn:5525/xy/login.php?name=%@&password=%@"
+#define GET_HOMEPAGEIMAGE @"http://wentao.uicp.cn:7070/demo/ads.json"
+#define CET_CLOTHESIMAGE  @"http://wentao"
 
 
 #define MoreCellIconImageArray @[@"联系客服",@"常见问题",@"服务范围",@"关于我们",@"用户协议",@"意见反馈"]

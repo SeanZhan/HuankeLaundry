@@ -35,7 +35,7 @@ completionHandler: (void (^)(NSString *result))completionHandler
   
   manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"]; 
   
-  NSString *ID = [NSString stringWithFormat:@"http://wentao.uicp.cn:5525/xy/login.php?name=%@&password=%@",Name,passworld];
+  NSString *ID = [NSString stringWithFormat: GET_ID,Name,passworld];
   
   [manager GET: ID
     parameters: nil
@@ -48,6 +48,33 @@ completionHandler: (void (^)(NSString *result))completionHandler
   } failure:^(AFHTTPRequestOperation * _Nonnull operation, NSError * _Nonnull error) {
     NSLog(@"Error: %@",error);
   }];
+}
+
+//MARK: - 获取首页的图片
+- (void)getHomepageImage: (void (^)(NSArray *imageAddress))completionHandler
+{
+  AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+  
+  manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"application/json"];
+  
+  [manager GET: GET_HOMEPAGEIMAGE
+    parameters: nil
+       success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
+
+         NSArray *adsArray = [responseObject objectForKey: @"ads"];
+         
+         NSMutableArray *imageURLArray = [NSMutableArray array];
+         
+         for (int i = 0; i < adsArray.count; i++) {
+           NSString *imageURL = [adsArray[i] objectForKey: @"image"];
+           [imageURLArray addObject: imageURL];
+         }
+         completionHandler(imageURLArray);
+       }
+       failure:^(AFHTTPRequestOperation * _Nonnull operation, NSError * _Nonnull error) {
+          NSLog(@"Error: %@",error);
+       }];
+
 }
 
 @end

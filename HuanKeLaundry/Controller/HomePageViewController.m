@@ -10,6 +10,9 @@
 #import <Masonry/Masonry.h>
 #import "ModelViewController.h"
 #import "SingletonClothesViewController.h"
+#import "HttpTool.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <RJImageLoader/UIImageView+RJLoader.h>
 
 @interface HomePageViewController ()
 
@@ -32,6 +35,7 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   [self setUI];
+  [self getAds];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -101,6 +105,17 @@
     make.height.equalTo(self.view).multipliedBy(0.238);
   }];
   
+  //设置_pageControl的属性与约束
+  _pageControl = [[UIPageControl alloc] init];
+  _pageControl.currentPageIndicatorTintColor = [UIColor blueForMainStyle];
+  _pageControl.tintColor = [UIColor grayColorForBackground];
+  
+  [self.view addSubview: _pageControl];
+  [_pageControl mas_makeConstraints:^(MASConstraintMaker *make) {
+    make.trailing.equalTo(self.view).offset(-10);
+    make.bottom.equalTo(_scrollView).offset(-10);
+  }];
+  
   //设置_SingletonButton的属性与约束
   _SingletonButton = [[UIButton alloc] init];
   [_SingletonButton setBackgroundImage: [UIImage imageNamed: @"1-0"]
@@ -168,6 +183,49 @@
     make.height.equalTo(_SingletonButton);
     make.bottom.equalTo(self.view).offset(-59);
   }];
+}
+
+//MARK: 请求广告页面数据
+- (void)getAds
+{
+  [[HttpTool shardeInstance] getHomepageImage:^(NSArray *imageAddress) {
+    
+    NSLog(@"%@",imageAddress);  //------------ 验证地址是否请求回来
+    
+   //[self setImageView: imageAddress];  //-------阻塞线程
+  
+  }];
+  
+}
+
+//MARK: 用于生成imageView并且设置pageContrl
+- (void)setImageView:(NSArray *)imageAddress
+{
+  _scrollView.contentSize = CGSizeMake(screenWidth * imageAddress.count,
+                                       _scrollView.frame.size.height);
+  //设置_pageContrl
+  _pageControl.numberOfPages = imageAddress.count;
+  
+  //循环往_scrollView上添加imageView
+  for (int i = 0; i < imageAddress.count; i++) {
+    __block UIImageView *imageView = [[UIImageView alloc] init];
+    imageView.frame = CGRectMake(screenWidth * i,
+                                 64,
+                                 screenWidth,
+                                 _scrollView.frame.size.height);
+    [_scrollView addSubview: imageView];
+    
+    [imageView startLoader];
+    [imageView sd_setImageWithURL: [[NSURL alloc] initWithString: imageAddress[i]]
+                 placeholderImage: nil
+                          options: SDWebImageCacheMemoryOnly | SDWebImageRefreshCached
+                         progress:^(NSInteger receivedSize, NSInteger expectedSize) {
+                           [imageView updateImageDownloadProgress: receivedSize / expectedSize];
+                         }
+                        completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+                          [imageView reveal];
+                        }];
+  }
 }
 
 //MARK: - _bagButton的点击事件
